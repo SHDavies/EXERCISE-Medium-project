@@ -1,0 +1,232 @@
+html, body {
+	width: 100%;
+	margin: 0px;
+}
+
+body {
+	padding: 1ex;
+	box-sizing: border-box;
+	font-family: 'Lucida Grande', sans-serif;
+}
+
+#icon {
+	font-size: 35px;
+	font-family: 'Ultra', serif;
+	margin: 0 1ex;
+	position: relative;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#published {
+	position: relative;
+}
+
+#published img {
+	float: left;
+}
+
+#published p:nth-child(2) {
+	float: right;
+	position: relative;
+	color: rgba(0,0,0,0.3);
+	font-size: 11px;
+	margin: 0px 20px 0px 10px;
+}
+
+#published p:last-child {
+	clear: right;
+	position: relative;
+	left: 10px;
+	margin-left: 12px;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+}
+
+#searchSignUp {
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#search {
+	border: 1px solid rgba(0, 0, 0, 0.14902);
+	border-radius: 13986px;
+	line-height: 30px;
+	width: 200px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.8);
+	display: inline-block;
+}
+
+#search::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+#search img {
+	float: left;
+}
+
+#signIn {
+	border: 1px solid rgb(87, 173, 104);
+	color: rgb(87, 173, 104);
+	border-radius: 13986px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	width: 150px;
+}
+
+article {
+	width: 700px;
+	margin: auto;
+}
+
+article h1 {
+	font-size: 60px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+article p {
+	color: rgba(0, 0, 0, 0.952941);
+	font-size: 22px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 35px;
+}
+
+footer {
+	border-top: 1px solid rgba(0, 0, 0, 0.14902);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.298039);
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	align-items: center;
+	background-color: white;
+}
+
+#left {
+	padding: 10px;
+	display: inline-block;
+}
+
+#left img:nth-child(2) {
+	border-radius: 100%;
+	margin-left: 5px;
+}
+
+#left span {
+	color: rgb(87, 173, 104);
+}
+
+#right {
+	display: flex;
+	box-sizing: border-box;
+}
+
+#tripIcons {
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 0px 20px;
+}
+
+#nextStory {
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	border-left: 1px solid rgba(0, 0, 0, 0.14902);
+	padding: 0px 20px;
+}
+
+@media screen and (max-width: 940px) {
+	#left, #right span, #published, #search {
+		display: none;
+	}
+	body {
+		margin-bottom: 56px;
+	}
+	footer {
+		height: 56px;
+		display: flex;
+	}
+	#right {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	#tripIcons {
+		width: 75%;
+		display: flex;
+		box-sizing: border-box;
+		margin: 0px;
+	}
+	#nextStory {
+		width: 15%;
+		box-sizing: border-box;
+		margin-left: 20px;
+	}
+	header {
+		display: block;
+	}
+	#searchSignUp {
+		float: right;
+	}
+	#searchSignUp::before {
+		content: url("https://cdn3.iconfinder.com/data/icons/watchify-v1-0-80px/80/search-80px-32.png");
+		border: 1px solid rgba(0, 0, 0, 0.14902);
+		border-radius: 13986px;
+		vertical-align: middle;
+		height: 31px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#searchSignUp::after {
+		content: "Juvoni Beckford and 50 others " url("https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-16.png");
+		display: block;
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.298039);
+		margin-top: 20px;
+	}
+	#icon {
+		float: left;
+	}
+	#icon::after {
+		content: url("https://d262ilb51hltx0.cloudfront.net/fit/c/32/32/1*bs9PbxDndAW7mmqve3EQ-w.jpeg");
+		font-size: 30px;
+		font-family: sans-serif;
+		position: relative;
+		margin-left: 20px;
+		top: 3px;
+	}
+	header::after {
+		content: url("https://d262ilb51hltx0.cloudfront.net/fit/c/32/32/1*oZu4yGg3LiS4YBe_HnOKew.jpeg") " Christopher Pitt Jan 14, 2014 6 min";
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.298039);
+		display: block;
+		position: relative;
+		top: 50px;
+		left: -112px;
+	}
+	article h1 {
+		margin-top: 75px;
+		font-size: 36px;
+	}
+	article {
+		margin: 0px;
+		width: 100%;
+	}
+	article p {
+		font-size: 20px;
+	}
+}
