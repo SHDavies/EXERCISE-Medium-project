@@ -81,6 +81,8 @@ header {
 	line-height: 30px;
 	display: inline-block;
 	width: 150px;
+	height: 32px;
+	margin-left: 10px;
 }
 
 article {
